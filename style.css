@@ -1,0 +1,84 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container-nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px ;
+    background-color: rgb(99, 99, 254);
+    text-align: center;
+}
+nav ul{
+    display: flex;
+    gap: 30px;
+    text-decoration: none;
+    list-style: none;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+.burger{
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+.burger div{
+    width: 25px;
+    height: 3px;
+}
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+}
+.card{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: rgb(99, 99, 254);
+    color: white;
+    border-radius: 10px;
+    margin: 20px;
+    gap: 20px;
+}
+.card img{
+    width: 500px;
+    height: 500px;
+    border-radius: 10px;
+}
+@media screen and (max-width: 768px){
+    .burger{
+        display: flex;
+    }
+    nav ul{
+        display: none;
+        flex-direction: column;
+        gap: 20px;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        background-color: rgb(99, 99, 254);
+    }
+    nav ul li a{
+        color: white;
+    }
+    .active{
+        display: block;
+    }
+   .card img{
+       width: 400px;
+       height: 400px;
+   }
+    .card{
+        flex-direction: column;
+        gap: 20px;
+    }
+}
