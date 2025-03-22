@@ -43,7 +43,7 @@ body{
 /* card stylling */
 .card{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     padding: 20px;
     background-color: rgb(99, 99, 254);
@@ -51,6 +51,9 @@ body{
     border-radius: 10px;
     margin: 20px;
     gap: 20px;
+    max-width: 100%;
+    height: 100%;
+    flex-wrap: wrap;
 }
 .card img{
     width: 500px;
@@ -84,6 +87,10 @@ body{
     border-radius: 10px;
     margin: 20px;
     gap: 20px;
+    max-width: 100%;
+    height: 100%;
+    flex-wrap: wrap;
+
 }
 /* style variant produckt */
 #varian{
@@ -97,6 +104,8 @@ body{
     margin: 20px;
     gap: 20px;
     flex-wrap: wrap;
+    max-width: 100%;
+    height: 100%;
 }
 #varian img{
     width: 250px;
@@ -124,6 +133,9 @@ body{
     background-color: rgb(99, 99, 254);
     color: white;
     border-radius: 10px;
+    max-width: 100%;
+    height: 100%;
+    gap: 20px;
 }
 .input-box{
     justify-content: center;
@@ -136,13 +148,16 @@ body{
     width: 100px;
     background-color: rgb(169, 169, 252);
     padding: 20px;
-    margin: 20px;
+    margin: 20px 0px;
     width: 100%;
     border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 .input-box input{
     width: 400px;
-    height: 40px;
+    height: 50px;
     padding: 10px;
     border-radius: 10px;
     border: none;
@@ -164,13 +179,15 @@ button{
    justify-content: center;
    align-items: center;
    margin: 20px;
-   padding: 20px;
+   padding: 20px ;
     background-color: rgb(169, 169, 252);
     color: white;
     border-radius: 10px;
     border: none;
     cursor: pointer;
-    width: fit-content;
+    font-size: 20px;
+    max-width: 100%;
+    height: 100%;
 }
 @media screen and (max-width: 768px){
     .hamburger{
@@ -219,5 +236,15 @@ button{
         padding: 10px;
         border-radius: 10px;
         text-align: center;
+    }
+    .input-box input{
+        width: 100%;
+        height: 50px;
+        padding: 10px;
+        border-radius: 10px;
+        border: none;
+        font-size: 18px;
+        transition: transform 0.2s ease-in-out;
+    
     }
 }
